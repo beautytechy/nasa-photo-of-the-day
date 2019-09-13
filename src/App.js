@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
+import NasaCard from "../src/NasaCard"
+import NasaInfo from "../src/NasaInfo"
+
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <h1>NASA Mars Rover Images</h1>
+      <h2> August 1, 2017</h2>
+      <NasaInfo />
+      
     </div>
   );
 }
