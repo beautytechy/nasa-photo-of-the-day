@@ -10,7 +10,7 @@ function NasaInfo() {
 
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=EzI2ZyM0jdh3VfJEA3sPgtDUuZ2CDkd4z9dKZPqx
+      .get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2017-08-01&api_key=EzI2ZyM0jdh3VfJEA3sPgtDUuZ2CDkd4z9dKZPqx
       `).then(response => {
      
         const nasaImg = response.data.photos;
@@ -30,6 +30,7 @@ function NasaInfo() {
             key={info.id}
             date={info.earth_date}
             banana={info.img_src}
+            rovername={info.camera.full_name}
             
           />
         )
